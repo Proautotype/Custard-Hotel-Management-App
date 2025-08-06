@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.custard</groupId>
-	<artifactId>RoomBookingService</artifactId>
+	<artifactId>room_booking_service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>RoomBookingService</name>
+	<name>room_booking_service</name>
 	<description>Room and Booking Service system</description>
 	<url />
 	<licenses>

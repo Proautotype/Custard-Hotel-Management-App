@@ -1,0 +1,20 @@
+name: custard hotel mgmt
+
+services:
+  hotel_mgmt_db:
+    container_name: hotel_mgmt_db
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: htm
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 12345
+    healthcheck:
+      test: "exit 0"
+    ports:
+      - 5432:5432
+
+  redis:
+    container_name: custard_mgmt_redis
+    image: redis:latest
+    ports:
+      - "6379:6379"

@@ -1,6 +1,6 @@
 package com.custard.room_booking_service.application.usecase.room.impl;
 
-import com.custard.room_booking_service.application.command.DeleteRoomCommand;
+import com.custard.room_booking_service.application.command.room.DeleteRoomCommand;
 import com.custard.room_booking_service.application.usecase.room.DeleteRoomUseServiceUseCase;
 import com.custard.room_booking_service.domain.port.RoomRepository;
 import lombok.RequiredArgsConstructor;

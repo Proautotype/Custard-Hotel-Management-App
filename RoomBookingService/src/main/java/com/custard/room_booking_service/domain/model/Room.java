@@ -34,9 +34,14 @@ public class Room {
     public static Room create(UUID id, String name, String floor , Money rate, RoomType type, RoomStatus status){
         logger.info("Create new Room Object");
        
-        Room room = new Room(
-            id, name,floor, rate, type, status, LocalDateTime.now() , null
-        );
+        Room room = Room.builder()
+                .id(id)
+                .name(name)
+                .floor(floor)
+                .rate(rate)
+                .type(type)
+                .status(status)
+                .build();
         RoomValidator.validate(room);
         return room;
     }

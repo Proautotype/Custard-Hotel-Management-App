@@ -1,5 +1,6 @@
-package com.custard.room_booking_service.application.command;
+package com.custard.room_booking_service.application.command.room;
 
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -8,5 +9,6 @@ import java.util.UUID;
 @Data
 @AllArgsConstructor
 public class DeleteRoomCommand {
+    @NotNull
     private UUID roomId;
 }

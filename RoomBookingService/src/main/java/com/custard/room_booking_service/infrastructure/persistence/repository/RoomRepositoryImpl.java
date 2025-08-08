@@ -6,6 +6,7 @@ import com.custard.room_booking_service.domain.model.Room;
 import com.custard.room_booking_service.domain.port.RoomRepository;
 import com.custard.room_booking_service.infrastructure.persistence.entity.RoomEntity;
 import com.custard.room_booking_service.infrastructure.persistence.mapper.RoomMapper;
+import com.custard.room_booking_service.infrastructure.persistence.repository.jpa.JpaRoomRepository;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -51,7 +52,7 @@ public class RoomRepositoryImpl implements RoomRepository {
         try {
             jpaRoomRepository.deleteById(id);
         } catch (Exception e) {
-            logger.error(e.getMessage(), e);
+            logger.error("Unable to delete data with id " + e.getMessage(), e);
             throw e;
         }
     }
@@ -61,7 +62,7 @@ public class RoomRepositoryImpl implements RoomRepository {
         return jpaRoomRepository.findByStatus(status)
                 .stream()
                 .map(RoomMapper::toDomain)
-                .collect(Collectors.toList());
+                .toList();
     }
 
     @Override

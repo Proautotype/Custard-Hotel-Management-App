@@ -1,6 +1,6 @@
 package com.custard.room_booking_service.application.usecase.room.impl;
 
-import com.custard.room_booking_service.application.command.UpdateRoomCommand;
+import com.custard.room_booking_service.application.command.room.UpdateRoomCommand;
 import com.custard.room_booking_service.application.usecase.room.UpdateRoomServiceUseCase;
 import com.custard.room_booking_service.domain.model.Room;
 import com.custard.room_booking_service.domain.port.RoomRepository;

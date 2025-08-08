@@ -1,8 +1,8 @@
 package com.custard.room_booking_service.interfaces.rest.controller;
 
-import com.custard.room_booking_service.application.command.CreateRoomCommand;
-import com.custard.room_booking_service.application.command.DeleteRoomCommand;
-import com.custard.room_booking_service.application.command.UpdateRoomCommand;
+import com.custard.room_booking_service.application.command.room.CreateRoomCommand;
+import com.custard.room_booking_service.application.command.room.DeleteRoomCommand;
+import com.custard.room_booking_service.application.command.room.UpdateRoomCommand;
 import com.custard.room_booking_service.application.usecase.room.CreateRoomServiceUseCase;
 import com.custard.room_booking_service.application.usecase.room.DeleteRoomUseServiceUseCase;
 import com.custard.room_booking_service.application.usecase.room.ListAvailableRoomServiceUseCase;

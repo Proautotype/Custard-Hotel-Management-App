@@ -17,13 +17,11 @@ import java.util.UUID;
 public class Booking {
     private UUID id;
     private UUID roomId;
-    private String customerName;
+    private UUID guestId;
     private DateRange period;
-    private final LocalDateTime createdAt = LocalDateTime.now();
-    private LocalDateTime updatedAt;
 
-    public static Booking create(UUID id, UUID roomId, String customerName, DateRange period) {
-        Booking booking = new Booking(id, roomId, customerName, period, LocalDateTime.now());
+    public static Booking create(UUID id, UUID roomId, UUID guestId, DateRange period) {
+        Booking booking = new Booking(id, roomId, guestId, period);
         BookingValidator.validate(booking);
         return booking;
     }

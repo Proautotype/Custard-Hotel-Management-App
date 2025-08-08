@@ -1,4 +1,4 @@
-package com.custard.room_booking_service.application.command;
+package com.custard.room_booking_service.application.command.room;
 
 import com.custard.room_booking_service.domain.enums.RoomStatus;
 import com.custard.room_booking_service.domain.enums.RoomType;

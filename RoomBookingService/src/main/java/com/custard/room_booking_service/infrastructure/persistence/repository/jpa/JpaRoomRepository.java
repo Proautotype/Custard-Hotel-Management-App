@@ -1,4 +1,4 @@
-package com.custard.room_booking_service.infrastructure.persistence.repository;
+package com.custard.room_booking_service.infrastructure.persistence.repository.jpa;
 
 import com.custard.room_booking_service.domain.enums.RoomStatus;
 import com.custard.room_booking_service.domain.enums.RoomType;

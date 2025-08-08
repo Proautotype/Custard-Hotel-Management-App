@@ -9,7 +9,8 @@ import java.util.UUID;
 public interface GuestRepository {
     Guest save (Guest guest);
     Optional<Guest> findById(UUID id);
-    List<Guest> findAll();
+    List<Guest> findAllGuests();
     List<Guest> searchByName(String name);
     void delete(UUID id);
+    Guest update(UUID id, Guest guest);
 } 
